@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+    
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 100%;
+    font-weight: lighter;
+    background-color: lightgrey;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+	width: 100%;
+    display: block;
+}
+
+a:link, a:visited, a:active {
+    color: #E88797;
+}
+
+.wrapper {
+}
+
+h1 {
+}
+
+h2 {
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+}
+
+li {
+    line-height: 1.5rem;
+}
+
+dl {
+    border: 1px solid red;
+    overflow: hidden; /*Overflow hidden can be used as clearfix. It reminds the <dl> to wrap around its floated children */
+}
+
+dt {
+    float: left;
+    clear: left; /* Force <dt> underneath anything floated left */
+    width: 8rem;
+}
+
+dd {
+    float: left;
+    margin:  0;
+    padding: 0;
+}
